@@ -6,6 +6,8 @@ class PostsController < ApplicationController
   end
 
   def show
+    @users = User.all
+    @comment = Comment.new
   end
 
   def new
